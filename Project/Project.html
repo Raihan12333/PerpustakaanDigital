@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Perpustakaan Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style_project.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <span>Perpustakaan Digital</span>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#home">Beranda</a></li>
+                    <li><a href="#books">Koleksi Buku</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Selamat Datang di Perpustakaan Digital Kami</h1>
+            <p>Temukan ribuan buku dari berbagai genre dan mulailah petualangan membaca Anda hari ini.</p>
+            <div class="btn-group">
+                <a href="#books" class="btn">Jelajahi Koleksi</a>
+                <a href="#" class="btn btn-outline">Daftar Anggota</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Cari buku, penulis, atau kategori...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Fitur Unggulan</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Koleksi Lengkap</h3>
+                    <p>Lebih dari 10.000 judul buku dari berbagai genre dan kategori tersedia untuk Anda.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Pencarian Canggih</h3>
+                    <p>Temukan buku yang Anda cari dengan mudah menggunakan sistem pencarian kami.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Akses Digital</h3>
+                    <p>Baca buku secara online atau unduh untuk dibaca offline kapan saja.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-user-clock"></i>
+                    <h3>Peminjaman Online</h3>
+                    <p>Pinjam buku fisik dengan mudah melalui sistem online kami.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Notifikasi</h3>
+                    <p>Dapatkan pemberitahuan saat buku yang Anda tunggu tersedia.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Rekomendasi</h3>
+                    <p>Dapatkan rekomendasi buku berdasarkan minat dan riwayat baca Anda.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="books" id="books">
+        <div class="container">
+            <h2 class="section-title">Koleksi Buku Terbaru</h2>
+            </div>
+            <div class="books-grid">
+                <div class="book-card" onclick="openModal('Bumi Manusia', 'Pramoedya Ananta Toer', 'Fiksi', '2018', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bumi Manusia adalah novel pertama dari Tetralogi Buru yang ditulis oleh Pramoedya Ananta Toer. Novel ini bercerita tentang perjuangan Minke, seorang pemuda Jawa di era kolonial Belanda.')">
+                    <div class="book-cover">
+                        <span>Bumi Manusia</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bumi Manusia</h3>
+                        <p>Pramoedya Ananta Toer</p>
+                        <p>Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('Laskar Pelangi', 'Andrea Hirata', 'Fiksi', '2005', 'Laskar Pelangi adalah novel pertama karya Andrea Hirata yang diterbitkan pada tahun 2005. Novel ini bercerita tentang kehidupan 10 anak dari keluarga miskin yang bersekolah di SD Muhammadiyah di Belitung.',)">
+                    <div class="book-cover">
+                        <span>Laskar Pelangi</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Laskar Pelangi</h3>
+                        <p>Andrea Hirata</p>
+                        <p>Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('3726 MDPL', 'Nurwina Sari', 'Non-Fiksi', '2019', 'Bukku mengisahkan tentang Rangga Raja, seorang mahasiswa Fakultas Kehutanan dan juga ketua OSPEK yang memiliki hobi mendaki gunung dan sedang jatuh hati pada adik tingkatnya, Andini Hangura, selama empat tahun lamanya. Meskipun perasaan yang Rangga miliki sudah sedikit-sedikit diperlihatkan, namun Andini tidak pernah memberikan respon atau tanggapan apapun. Setiap kali Rangga mendaki, ia selalu mengirimkan foto dari berbagai puncak gunung dan mengirimkannya kepada Andini berharap ada balasan dari Andini.',)">
+                    <div class="book-cover">
+                        <span>3726 MDPL</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>3726 MDPL</h3>
+                        <p>Nurwina Sari</p>
+                        <p>Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('Sapiens', 'Yuval Noah Harari', 'Non-Fiksi', '2011', 'Sapiens: Riwayat Singkat Umat Manusia adalah buku yang mengeksplorasi sejarah evolusi manusia dari zaman batu hingga revolusi teknologi abad ke-21.',)">
+                    <div class="book-cover">
+                        <span>Sapiens</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Sapiens</h3>
+                        <p>Yuval Noah Harari</p>
+                        <p>Non-Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('Atomic Habits', 'James Clear', 'Non-Fiksi', '2018', 'Atomic Habits adalah buku yang membahas tentang kekuatan kebiasaan kecil dan bagaimana perubahan kecil yang konsisten dapat membawa hasil yang luar biasa dalam jangka panjang.')">
+                    <div class="book-cover">
+                        <span>Atomic Habits</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Atomic Habits</h3>
+                        <p>James Clear</p>
+                        <p>Non-Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('The Innovators', 'Walter Isaacson', 'Teknologi', '2014', 'The Innovators menceritakan sejarah revolusi digital dan para pelopor yang menciptakan komputer dan internet, mulai dari Ada Lovelace hingga Steve Jobs.')">
+                    <div class="book-cover">
+                        <span>The Innovators</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>The Innovators</h3>
+                        <p>Walter Isaacson</p>
+                        <p>Teknologi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('Bandung After Rain', 'Wulan Nur Amalia', 'Non-Fiksi', '2024', 'Buku ini mengisahkan perjalanan cinta yang penuh dinamika antara dua tokoh utama, Hema dan Rania. Setelah hampir tujuh tahun menjalin hubungan, mereka akhirnya harus berpisah karena sikap Hema yang semakin acuh terhadap Rania.')">
+                    <div class="book-cover">
+                        <span>Bandung After Rain</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Bandung After Rain</h3>
+                        <p>Wulan Nur Amalia</p>
+                        <p>Non-Fiksi</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openModal('Cosmos', 'Carl Sagan', 'Sains', '1980', 'Cosmos adalah salah satu buku sains populer terbaik sepanjang masa yang menjelaskan evolusi alam semesta, kehidupan, dan peradaban manusia dengan gaya narasi yang memukau.')">
+                    <div class="book-cover">
+                        <span>Cosmos</span>
+                    </div>
+                    <div class="book-info">
+                        <h3>Cosmos</h3>
+                        <p>Carl Sagan</p>
+                        <p>Sains</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">Tentang Perpustakaan Kami</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Misi Kami</h2>
+                    <p>Perpustakaan Digital didirikan pada tahun 2010 dengan misi untuk menyediakan akses pengetahuan yang merata bagi semua orang. Kami percaya bahwa buku adalah jendela dunia dan setiap orang berhak mendapatkan akses terhadap informasi dan pengetahuan.</p>
+                    <p>Dengan koleksi lebih dari 50.000 judul buku dalam berbagai format, kami berkomitmen untuk menjadi pusat pembelajaran dan penelitian terkemuka di Indonesia.</p>
+                    <h2>Fasilitas</h2>
+                    <p>Selain koleksi buku digital, kami juga menyediakan:</p>
+                    <ul>
+                        <li>Ruang baca yang nyaman</li>
+                        <li>Area kerja kelompok</li>
+                        <li>Koleksi buku langka</li>
+                        <li>Akses ke jurnal internasional</li>
+                        <li>Workshop dan seminar rutin</li>
+                    </ul>
+                    <a href="#" class="btn">Pelajari Lebih Lanjut</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Perpustakaan">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p><strong>Alamat:</strong></p>
+                                <p>Jl. Cut Mutia Kota Bekasi</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <p><strong>Telepon:</strong></p>
+                                <p>081234567890</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p><strong>Email:</strong></p>
+                                <p>perpustakaandigital@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>Jam Operasional</h3>
+                    <div class="opening-hours">
+                        <table>
+                            <tr>
+                                <td>Senin - Jumat</td>
+                                <td>08:00 - 20:00</td>
+                            </tr>
+                            <tr>
+                                <td>Sabtu</td>
+                                <td>09:00 - 17:00</td>
+                            </tr>
+                            <tr>
+                                <td>Minggu</td>
+                                <td>10:00 - 15:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="social-links" style="margin-top: 2rem;">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Perpustakaan Digital</h3>
+                    <p>Menyediakan akses pengetahuan untuk semua sejak 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Link Cepat</h3>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#books">Koleksi Buku</a></li>
+                        <li><a href="#about">Tentang Kami</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                        <li><a href="#">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Layanan</h3>
+                    <ul>
+                        <li><a href="#">Peminjaman Buku</a></li>
+                        <li><a href="#">E-Book</a></li>
+                        <li><a href="#">Audiobook</a></li>
+                        <li><a href="#">Penelusuran Katalog</a></li>
+                        <li><a href="#">Layanan Referensi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Perpustakaan Digital. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Book Detail Modal -->
+    <div class="modal" id="bookModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Detail Buku</h2>
+                <button class="close-modal" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="book-detail">
+                    <div class="book-detail-image" id="bookDetailImage">
+                        <span id="bookImageText">Cover Buku</span>
+                    </div>
+                    <div class="book-detail-info">
+                        <h3 id="bookTitle">Judul Buku</h3>
+                        <p class="book-meta" id="bookAuthor">Penulis: </p>
+                        <p class="book-meta" id="bookGenre">Genre: </p>
+                        <p class="book-meta" id="bookYear">Tahun Terbit: </p>
+                        <p class="book-meta" id="bookStatus">Status: </p>
+                        <div class="book-description">
+                            <p id="bookDescription">Deskripsi buku akan muncul di sini.</p>
+                        </div>
+                        <div class="book-actions">
+                            <button class="btn" id="borrowBtn">Pinjam Buku</button>
+                            <button class="btn btn-outline" onclick="closeModal()">Tutup</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    // Mobile Menu Toggle - Versi yang diperbaiki
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const nav = document.getElementById('nav');
+        
+        // Fungsi untuk toggle menu
+        function toggleMenu() {
+            nav.classList.toggle('active');
+            
+            // Tambahan untuk animasi hamburger icon
+            const icon = hamburger.querySelector('i');
+            if (nav.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+        
+        // Event listener untuk hamburger
+        hamburger.addEventListener('click', function(e) {
+            e.stopPropagation(); // Mencegah event bubbling
+            toggleMenu();
+        });
+        
+        // Tutup menu saat klik di luar
+        document.addEventListener('click', function(e) {
+            if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                nav.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        
+        // Book Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+                
+                const filter = btn.textContent;
+                console.log(`Filtering by: ${filter}`);
+            });
+        });
+        
+        // Modal Functions
+        function openModal(title, author, genre, year, description, status) {
+            const modal = document.getElementById('bookModal');
+            const borrowBtn = document.getElementById('borrowBtn');
+            
+            // Set book details
+            document.getElementById('modalTitle').textContent = title;
+            document.getElementById('bookTitle').textContent = title;
+            document.getElementById('bookAuthor').textContent = `Penulis: ${author}`;
+            document.getElementById('bookGenre').textContent = `Genre: ${genre}`;
+            document.getElementById('bookYear').textContent = `Tahun Terbit: ${year}`;
+            document.getElementById('bookDescription').textContent = description;
+            document.getElementById('bookImageText').textContent = title;
+            
+            // Set status and button
+            const statusElement = document.getElementById('bookStatus');
+            if (status === 'Tersedia') {
+                statusElement.textContent = 'Status: Tersedia';
+                statusElement.className = 'book-meta status-available';
+                borrowBtn.textContent = 'Pinjam Buku';
+                borrowBtn.disabled = false;
+            } else {
+                statusElement.textContent = 'Status: Dipinjam';
+                statusElement.className = 'book-meta status-borrowed';
+                borrowBtn.textContent = 'Tidak Tersedia';
+                borrowBtn.disabled = true;
+            }
+            
+            // Show modal
+            modal.style.display = 'block';
+            
+            // Add click event for borrow button
+            borrowBtn.onclick = function() {
+                alert(`Buku "${title}" berhasil dipinjam!`);
+                closeModal();
+            };
+        }
+        
+        function closeModal() {
+            document.getElementById('bookModal').style.display = 'none';
+        }
+        
+        // Close modal when clicking outside of it
+        window.addEventListener('click', (event) => {
+            const modal = document.getElementById('bookModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
+    });
+</script>
